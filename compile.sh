@@ -9,7 +9,7 @@ pushd linux-3.10
    echo ""
    echo "kernel will build without a problem"
    echo "Now if we try to look for the following loadable kernel module: linux-3.10/drivers/video/robopeak/rp_usbdisplay.ko"
-   echo "it won't be found because it wasn't built"
+   echo "it won't be found because it wasn't built.The kernel Kconfig system doesn't see it. I don't know why."
    echo "however, if I directly build the module then it works:"
    echo ""
    make SUBDIRS=drivers/video/robopeak/
